@@ -6,11 +6,11 @@ $ npm install
 ```
 
 * to start mongodb
-```bat
+```shell
 $ service mongod start
 ```
 
 * to start this project
-```sh
+```properties
 $ npm start
 ```
