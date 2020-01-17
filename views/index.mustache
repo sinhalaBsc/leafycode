@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>Basic HTML Document</title>
+    <meta name="description" content="A simple HTML and CSS tutorial">
+    <link href="/assets/style.css" rel="stylesheet" type="text/css">
+  </head>
+  <body>
+    <h3>Todo list</h3>
+    <form action="/todos" method="post">
+      <input type="text" name="description">
+      <button type="submit">Add</button>
+    </form>
+    <ul>
+    {{#todos}}
+       <form action="/todos/{{_id}}/completed" method="post">
+         <li>{{description}} - todo  <button type="submit"> &check; </button> </li>
+       </form>
+    {{/todos}}
+    </ul>
+    <h3>Done List </h3>
+    <ul>
+    {{#donetodos}}
+       <form action="/todos/{{_id}}/completed" method="post">
+	       <li>{{description}} -  <span class="time"> did at {{time}} </span> </li>
+       </form>
+    {{/donetodos}}
+    </ul>
+  </body>
+</html>
