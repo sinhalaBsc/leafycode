@@ -11,6 +11,6 @@ $ service mongod start
 ```
 
 * to start this project
-```bash
+```sh
 $ npm start
 ```
