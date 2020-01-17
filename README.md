@@ -1,7 +1,7 @@
 # TODO app
 
 * to install node_modules
-```console
+```shell
 $ npm install
 ```
 
