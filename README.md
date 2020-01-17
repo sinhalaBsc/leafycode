@@ -1,12 +1,12 @@
 # TODO app
 
 * to install node_modules
-```bash
+```console
 $ npm install
 ```
 
 * to start mongodb
-```bash
+```bat
 $ service mongod start
 ```
 
